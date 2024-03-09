@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+  box-shadow: none;
+}
+.container{
+    background-color: #C25F42;
+    height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+.left_side{
+   /* background-color: #C25F42;  */
+   width: 900px;
+
+}
+.right_side{
+    background-color: white;
+    width: 1200px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    position: relative;
+    
+  
+}
+
+.container .left_side img{
+    width: 100px;
+    /* height: 30px; */
+    margin-left: -15px;
+    position: absolute;
+
+}
+.container .right_side .img img{
+    width: 60%;
+    margin-left: -35%;
+    margin-top: -35%;
+   
+}
+.container .left_side .text{
+    margin-top: 130px;
+   
+    color: #fff;
+    margin-left: 30px;
+
+}
+.container .left_side .text h1{
+    font-size: 25px;
+    margin-left: 30px;
+}
+.container .right_side .welcome{
+    background-color: #C25F42;
+    /* color: #fff; */
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 140px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+   
+    padding: 5px;
+
+    
+}
+.container .right_side .welcome p{
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.container .right_side .form{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.container .right_side .form h3{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.container .right_side .form .input{
+   display: flex;
+   flex-direction: column;
+}
+.container .right_side .form .input label{
+    padding: 10px;
+    color: #7E7777;
+    margin-left: -10px;
+}
+.container .right_side .form .input input{
+    padding: 7px;
+    width: 300px;
+}
+.container .right_side .form .btn{
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C25F42;
+    /* padding: 10px; */
+    border-radius: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    
+}
+
+.container .right_side .form .btn:hover{
+    background-color: #fff;
+    border: 2px solid #C25F42;
+    color: #000;
+    
+}
+.container .right_side .form .btn a:hover{
+    color: #000;
+}
+.container .right_side .form .signup{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 14px;
+}
+.container .right_side .form .signup span{
+    color: #C25F42;
+    text-decoration: underline;
+}

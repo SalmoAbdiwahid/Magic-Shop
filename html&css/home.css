@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    
+}
+.sidebar{
+    width: 220px;
+    background-color: #C25F42;
+    position: fixed;
+    height: 100vh;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin-left: 220px;
+   
+}
+
+
+.sidebar .logo img{
+    width: 200px;
+}
+.sidebar h5{
+    margin-left: 10px;
+    font-size: 18px;
+    color: #4E4E4E;
+}
+.sidebar .nav{
+    margin-top: 20px;
+    
+
+}
+
+.nav .li{
+    display: flex;
+    /* background-color: #E2E2E2; */
+    width: 100%;
+    padding: 5px 30px;
+    margin-bottom: 17px;
+    
+}
+.nav .li:hover{
+    background-color: #F0997F;
+}
+.active{
+    background-color: #F0997F;
+}
+.sidebar .nav .li a{
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #F9D3C0;
+}
+.sidebar .nav .li ion-icon{
+    font-size: 22px;
+    padding-right: 10px;
+    color: #fff;
+}
+.logout{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: 9px;
+}
+.logout a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-top: 2px;
+}
+.logout span ion-icon{
+    font-size: 28px;
+    padding-right: 2px;
+    color: #fff;
+   
+}
+
+
+/* --header-- */
+.main .header{
+    width: 100%;
+    height: 60px;
+  border-bottom: 1px solid #E2E2E2;
+  display: flex;
+  padding-left: 15px ;
+  padding-bottom: 15px;
+
+}
+
+
+.main .header ion-icon{
+    font-size: 40px;
+    margin-top: 10px;
+    color: #C25F42;
+ 
+  
+}
+.main .header  a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 500;
+    margin-top: 12px;
+    border-bottom: 5px solid #C25F42;
+    /* margin-bottom: 15px; */
+    
+}
+
+.main .header  input{
+    height: 32px;
+    width: 220px;
+    margin-left: 10%;
+    margin-top: 15px;
+   padding: 5px;
+    
+}
+.main .header span{
+    margin-left: -30px;
+    margin-top: 7px;
+}
+.main .header span  ion-icon{
+    font-size: 25px;
+}
+.main .header .admin .img img{
+  
+    width: 45px;
+    height: 45px;
+    background-color: #F0997F;
+    border-radius: 70%;
+    margin-top: 5px;
+}
+
+.main .header .admin{
+    margin-left: 27%;
+  
+}
+.main .header .ad{
+   font-size: 22px;
+   margin-top: 9px;
+   display: flex;
+   margin-left: 10px;
+}
+.main .header .ad .ko{
+    margin-left: 10px;
+    color: #C25F42;
+    border-bottom: 5px solid #C25F42;
+}
+
+/* --content starts here-- */
+.main .content{
+    height: 100%;
+   
+}
+.content .head{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.content .head p{
+    font-size: 18px;
+   
+    font-weight: 500;
+}
+.content .head .order{
+    border-bottom: 5px solid #C25F42;
+    margin-left: 10px;
+}
+.content .cards{
+    /* background-color: #F9D3C0; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.cards .onecard{
+    width: 340px;
+    height: 150px;
+    background-color: #F0997F;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    margin-left: 8px;
+    
+}
+.cards .onecard .img{
+    width: 110px;
+    height: 110px;
+    background-color: #F0F0F0;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.cards .onecard .img img{
+    width: 90%;
+    height: 90%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.cards .onecard .info{
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.cards .onecard .info h3{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 22px;
+}
+.cards .onecard .info h5{
+    margin-left: 40px;
+    font-size: 30px;
+    color: #C25F42;
+}
+.cards .onecard .info p{
+    color: red;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 25px;
+}
+.cards .onecard .info .seeMore{
+    display: flex;
+}
+.cards .onecard .info .seeMore a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+.cards .onecard .info .seeMore i{
+    color: #C25F42;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+
+ /* --graphical represantation--  */
+
+ .chartCont{
+  margin: 10px;
+  margin-top: 3%;
+  display: flex;
+  
+ }
+ .chartCont .line{
+    background-color: #F0997F;
+    width: 450px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 30px;
+ }
+ .chartCont .line .title p{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+   color: #5e5c5c;
+  
+ }
+ .chartCont .line .title .num{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+ }
+ .chartCont .line .title .num h3{
+    font-weight: bold;
+    font-size: 20px;
+ }
+ .chartCont .line .title .num h5{
+    color: green;
+    margin-left: 30px;
+    font-size: 20px;
+ }
+
+ .chartCont .bar{
+    width: 380px;
+    height: 300px;
+    margin-left: 40px;
+    background-color: #F0997F;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
+ }
+.bar .title p{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+   color: #5e5c5c;
+}
+.bar .img{
+    width: 350px;
+    height: 220px;
+    background-color: #A6A6A6;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.bar .img img{
+    width: 100%;
+    height: 100%;
+}
+.line .img{
+    width: 420px;
+    height: 300px;
+ 
+    margin-left: 16px;
+    margin-top: 15px;
+}
+.line .img img{
+    width: 100%;
+    height: 100%;
+}
+/* --section two starts-- */
+.section2 .head{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 20px;
+
+}
+.section2 .head p{
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.section2 .head .order{
+    border-bottom: 5px solid #C25F42;
+  
+}
+
+.section2 .pending{
+    margin-top: 4%;
+   
+
+}
+.section2 .pending .ordersCont{
+   
+    /* background-color: #F0997F; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+}
+.section2 .pending .ordersCont .oneorder{
+    width: 500px;
+    height: 230px;
+    background-color: #F0997F;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* display: flex;
+    justify-content: space-between; */
+    margin-left: 18px;
+}
+.section2 .pending .ordersCont .oneorder .dateID{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 8px;
+    color: #4C4A4A;
+    margin-left: 5px;
+
+}
+.section2 .pending .ordersCont .oneorder .dateID span{
+    color: #C25F42;
+}
+.section2 .pending .ordersCont .oneorder .dateID .date{
+    margin-left: 90px;
+}
+.section2 .pending .ordersCont .oneorder .orderimg {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.section2 .pending .ordersCont .oneorder .orderimg .img img{
+    width: 60px;
+    height: 60px;
+    background-color: #F0997F;
+    border-radius: 70%;
+    margin-top: 5px;
+
+}
+.section2 .pending .ordersCont .oneorder .orderimg p{
+    margin-top: 20px;
+    color: #4C4A4A;
+    margin-left: 5px;
+    font-size: 18px;
+
+
+}
+.section2 .pending .ordersCont .oneorder .orderimg p span{
+    color: #000;
+    font-weight: bold;
+}
+.section2 .pending .ordersCont .oneorder .payment{
+    margin-left: 50%;
+    margin-top: 20px;
+    font-size: 18px;
+   font-weight: bold;
+   padding-bottom: 10px;
+}
+.section2 .pending .ordersCont .oneorder .foot{
+    border-top: 1px solid #A6A6A6;
+    width: 100%;
+    
+    display: flex;
+}
+.section2 .pending .ordersCont .oneorder .foot p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.section2 .pending .ordersCont .oneorder .foot .btn{
+    margin-top: 30px;
+     margin-left: 120px;
+}
+.section2 .pending .ordersCont .oneorder .foot .btn .reject{
+    background-color: #989595;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.section2 .pending .ordersCont .oneorder .foot .btn .reject:hover{
+    background-color: #F0997F;
+    color: #000;
+    border: 2px solid #C25F42;
+}
+.section2 .pending .ordersCont .oneorder .foot .btn .confirm{
+    background-color: #C25F42;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 5px;
+
+}
+.section2 .pending .ordersCont .oneorder .foot .btn .confirm:hover{
+    background-color: #F0997F;
+    color: #000;
+    border: 2px solid #C25F42;
+}
+.oneorder2{
+    margin-right: 7px;
+}
+
+/* --model conffirm-- */
+

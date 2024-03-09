@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boostrap</title>
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+    body{
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+}
+.cont{
+    display: flex;
+    
+}
+.sidebar{
+    width: 220px;
+    background-color: #C25F42;
+    position: fixed;
+    height: 100vh;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin-left: 220px;
+   
+}
+.header{
+    height: 60px;
+}
+.logo img{
+    width: 200px;
+}
+.sidebar h5{
+    color: #4E4E4E;
+}
+.sidebar  .li:hover{
+    background-color: #F0997F;
+}
+.active{
+    background-color: #F0997F !important;
+}
+.act{
+    color: #F0997F !important;
+}
+.header .admin .img img{
+    width: 45px;
+    height: 45px;
+    background-color: #F0997F;
+    border-radius: 70%;
+    margin-top: 5px;
+}
+.header a{
+    border-bottom: 5px solid #C25F42;
+font-weight: 500;}
+.order{
+    border-bottom: 3px solid #C25F42;
+}
+
+.btn:hover{
+    color: #C25F42 !important;
+    border: 2px solid #C25F42;
+    background-color: #fff;
+}
+.add{
+    background-color: #C25F42;
+     height: 40px; 
+     width: 170px;
+     margin-left: 35%;
+}
+.contt{
+    width: 90%;
+     height: 700px;
+     margin-top: 5%;
+     margin-left: 5%;
+    
+}
+.table th{
+    background-color: #F0997F;
+}
+.ref{
+    margin-left: 50% !important;
+}
+  </style>
+  <body>
+
+    <div class="cont">
+        <!-- --side bar starts-- -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="" class="">
+        </div>
+        <h5 class="ms-2">Menu</h5>
+        <div class="nav d-block">
+            
+            <div class="li  py-2   text-light mt-1">
+                <ion-icon name="home-outline" class="fs-4 ms-5 "></ion-icon>
+                <a href="home.html" class=" text-light  fs-5 ms-2 text-decoration-none">Dashboard</a>
+            </div>
+            <div class="li py-2  text-light mt-1">
+                <ion-icon name="document-text-outline" class="fs-4 ms-5 "></ion-icon>
+                <a href="Orders.html" class=" text-light  ms-2 fs-5 text-decoration-none">Orders</a>
+            </div>
+            <div class="li py-2   text-light mt-1">
+                <ion-icon name="book-outline" class="fs-4 ms-5"></ion-icon>
+                <a href="menu.html" class=" text-light  ms-2 fs-5 text-decoration-none">Menu</a>
+            </div>
+            <div class="li py-2  text-light mt-1">
+                <ion-icon name="git-branch-outline" class="fs-4 ms-5"></ion-icon>
+                <a href="Branches.html" class=" text-light  ms-2 fs-5 text-decoration-none">Branches</a>
+            </div>
+            <div class="li py-2   active text-light mt-1">
+                <ion-icon name="people-circle-outline" class="fs-4 ms-5"></ion-icon>
+                <a href="Employees.html" class=" text-light  ms-2 fs-5 text-decoration-none">Employees</a>
+            </div>
+            <div class="li py-2   text-light mt-1">
+                <ion-icon name="paper-plane-outline" class="fs-4 ms-5"></ion-icon>
+                <a href="promotion.html" class=" text-light  ms-2 fs-5 text-decoration-none">Promotion</a>
+            </div>
+            <div class="li py-2   text-light mt-1">
+                <ion-icon name="person-add-outline" class="fs-4 ms-5"></ion-icon>
+                <a href="Admins.html" class=" text-light  ms-2 fs-5 text-decoration-none">Admins</a>
+            </div>
+            <div class="li py-2   text-light mt-1">
+               <span> <ion-icon name="newspaper-outline" class="fs-4 ms-5"></ion-icon></span>
+                <a href="Reports.html" class=" text-light  ms-2 fs-5 text-decoration-none">Reports</a>
+            </div>
+
+
+        </div>
+        <div class="logout ms-5 mt-4 d-flex justify-content-center">
+           <span><ion-icon name="log-out-outline" class=" text-light ms-5  fs-3   " ></ion-icon></span>
+           <div class="">
+          <a href="login.html" class="me-4 fs-5 mt-5 ms-2 text-decoration-none text-light">Logout</a>
+        </div>
+        </div>
+    </div>
+    <!-- --sidebar ends-- -->
+
+
+    <!-- --main starts-- -->
+    <div class="main">
+      <!-- --content starts-- -->
+        <div class="content">
+            <!-- --header starts-- -->
+            <div class="header border-bottom d-flex ">
+                <ion-icon name="image-outline" class="ms-3 fs-1 mt-2" style="color: #C25F42;"></ion-icon>
+                
+           
+            <a href="error.html" class="ms-1 mt-2 fs-5 text-decoration-none text-dark pb-1  pt-1 mb-3 "> View Website</a>
+
+            <div class="d-flex">
+                <input type="text" placeholder="Search" class="ms-5 h-50 mt-3">
+                <span class="me-5 mt-1" style="margin-left: -30px;" ><ion-icon name="search-outline" class="fs-4  mt-3" ></ion-icon></span>
+            </div>
+                
+           
+
+            <div class="admin  " style="margin-left: 30%;">
+                <div class="img">
+                    <img src="images/admins/user 1.jpg" alt="">
+                </div>
+            </div>
+                    <div class="d-flex mt-3 ms-2 fs-5">
+                        <p class="">Admin</p>
+                     <p class="ms-2 fw-semibold  h-75 " style="color: #C25F42; border-bottom: 3px solid #C25F42; ">Koala!!</p>
+                    </div>
+                
+            </div>
+            <!-- -headers ends-- -->
+            <h1 class="h1 ms-4 mt-3 fw-semibold" style="color: #C25F42;">Employees</h1>
+                <div class="d-flex mt-5 mt-5 ">
+                    <div class="d-flex">
+                        <input type="text" placeholder="Search" class="ms-5 h-70 mt-3">
+                        <span class="me-5 mt-2" style="margin-left: -30px;" ><ion-icon name="search-outline" class="fs-5  mt-3" ></ion-icon></span>
+                    </div>
+                    <div class="d-flex ref ms-5 border text-center mt-3 pt-1 " style="height: 35px; width: 100px; margin-left:50%; ">
+                        <ion-icon name="refresh-outline" style="color: #C25F42;" class="fs-4 "></ion-icon>
+                        <p>Refreash</p>
+                    </div>
+                </div>
+               
+                <!-- --table-- -->
+                <div class="contt shadow rounded" >
+                    <table class="table " style="width: 100%;">
+                        <tr>
+                          <th class="id">ID</th>
+                          <th>Branch<br>Name</th>
+                          <th>Address</th>
+                          <th>Phone</th>
+                          <th>Email</th>
+                          <th>Delivary<br>Commistion</th>
+                          <th>Revanue</th>
+                          <th>Statues</th>
+                        </tr>
+                        <tr>
+                          <td class="id">0613</td>
+                          <td>BS&T</td>
+                          <td>bighit7magicshop<br>seoul shop</td>
+                          <td>262777777</td>
+                          <td>magicshop@gmail.com</td>
+                          <td>10</td>
+                          <td>$9,00,45,60</td>
+                          <td class="act">Active</td>
+                        </tr>
+                        <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                          <tr>
+                            <td class="id">0613</td>
+                            <td>BS&T</td>
+                            <td>bighit7magicshop<br>seoul shop</td>
+                            <td>262777777</td>
+                            <td>magicshop@gmail.com</td>
+                            <td>10</td>
+                            <td>$9,00,45,60</td>
+                            <td class="act">Active</td>
+                          </tr>
+                      </table>
+                </div>
+        
+            <!-- --content ends-- -->
+        </div>
+       
+
+
+
+
+        <!-- --main ends-- -->
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
